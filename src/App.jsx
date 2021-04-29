@@ -44,18 +44,18 @@ class App extends Component {
     const { winner } = this.state
     return (
       <>
-        <Container>
-          <Header as='h1' data-cy='game-header' >R.P.S</Header>
-          <Header data-cy='result' as='h3'>{winner ? this.selectWinner() : null}</Header>
+        <Container >
+          <Header as='h1' data-cy='game-header' textAlign='center'>R.P.S</Header>
+          <Header data-cy='result' as='h3' textAlign='center'>{winner ? this.selectWinner() : null}</Header>
           <Container data-cy='game-container'>
-            <Button.Group>
-              <Button data-cy='rock-btn' value="rock" onClick={() => this.chooseHand[0], this.play }>
+            <Button.Group fluid>
+              <Button data-cy='rock-btn' value="rock" size="massive" onClick={() => this.chooseHand[0], this.play }>
                 <Icon name='rock hand' size='huge' />
                 </Button>
-              <Button data-cy='scissor-btn' value="scissor" onClick={() => this.chooseHand[1], this.play }>
+              <Button data-cy='scissor-btn' value="scissor" size="massive" onClick={() => this.chooseHand[1], this.play }>
                 <Icon name='hand scissors' size='huge'/>
                 </Button>
-              <Button data-cy='paper-btn' value="paper" onClick={() => this.chooseHand[2], this.play }>
+              <Button data-cy='paper-btn' value="paper" size="massive" onClick={() => this.chooseHand[2], this.play }>
                 <Icon name='paper hand' size='huge'/>
                 </Button>
             </Button.Group>
