@@ -45,10 +45,10 @@ class App extends Component {
     return (
       <>
         <Container >
-          <Header as='h1' data-cy='game-header' textAlign='center'>R.P.S</Header>
-          <Header data-cy='result' as='h3' textAlign='center'>{winner ? this.selectWinner() : null}</Header>
+          <Header id='header' as='h1' data-cy='game-header' textAlign='center'>R.P.S</Header>
+          <Header id='score' data-cy='result' as='h3' textAlign='center'>{winner ? this.selectWinner() : null}</Header>
           <Container data-cy='game-container'>
-            <Button.Group fluid>
+            <Button.Group id='buttons' fluid>
               <Button data-cy='rock-btn' value="rock" size="massive" onClick={() => this.chooseHand[0], this.play }>
                 <Icon name='rock hand' size='huge' />
                 </Button>
