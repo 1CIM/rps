@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: rgb(153, 159, 167);
+}
+
+#header {
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+#score {
+  font-size: 30px;
+}
+
+#buttons {
+  padding-top: 100px;
+}
+
+
