@@ -8,6 +8,6 @@ as a player
 in order to know who won
 i would like to see the the winner displayed
 
-**fork and clone repo**
-**run yarn**
-**run yarn start**
+- fork and clone repo
+- run yarn
+- run yarn start
