@@ -52,10 +52,10 @@ class App extends Component {
               <Button data-cy='rock-btn' value="rock" size="massive" onClick={() => this.chooseHand[0], this.play }>
                 <Icon name='rock hand' size='huge' />
                 </Button>
-              <Button data-cy='scissor-btn' value="scissor" size="massive" onClick={() => this.chooseHand[1], this.play }>
+              <Button data-cy='scissor-btn' value="scissor" size="massive" onClick={() => this.chooseHand[2], this.play }>
                 <Icon name='hand scissors' size='huge'/>
                 </Button>
-              <Button data-cy='paper-btn' value="paper" size="massive" onClick={() => this.chooseHand[2], this.play }>
+              <Button data-cy='paper-btn' value="paper" size="massive" onClick={() => this.chooseHand[1], this.play }>
                 <Icon name='paper hand' size='huge'/>
                 </Button>
             </Button.Group>
