@@ -3,7 +3,7 @@ describe('User can play the game', () => {
   it('plays and loose the game', () => {
     cy.visit('/', {
       onBeforeLoad(window) {
-        cy.stub(window.Math, 'random').returns(0);
+        cy.stub(window.Math, 'floor').returns(0);
       }
     });
     cy.get('[data-cy=game-container]').within(() => {
@@ -15,7 +15,7 @@ describe('User can play the game', () => {
   it('plays tie the game', () => {
     cy.visit('/', {
       onBeforeLoad(window) {
-        cy.stub(window.Math, 'random').returns(1)
+        cy.stub(window.Math, 'floor').returns(1)
       }
     });
     cy.get('[data-cy=game-container]').within(() => {
@@ -27,7 +27,7 @@ describe('User can play the game', () => {
   it('plays and win the game', () => {
     cy.visit('/', {
       onBeforeLoad(window) {
-        cy.stub(window.Math, 'random').returns(2)
+        cy.stub(window.Math, 'floor').returns(2)
       }
     });
     cy.get('[data-cy=game-container]').within(() => {
