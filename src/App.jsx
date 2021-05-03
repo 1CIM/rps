@@ -13,7 +13,7 @@ class App extends Component {
 
   play = () => {
     this.setState({
-      p2: hands[_.floor(_.random(hands.length))],
+      p2: hands[_.floor(_.random(_.size(hands)))],
       winner: this.selectWinner()
     })
   }
