@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Button, Container, Header, Icon} from 'semantic-ui-react'
+import _ from 'lodash'
 
 const hands = ['rock', 'paper', 'scissor']
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
 
   play = () => {
     this.setState({
-      p2: hands[Math.floor(Math.random() * hands.length)],
+      p2: hands[_.floor(_.random(hands.length))],
       winner: this.selectWinner()
     })
   }
